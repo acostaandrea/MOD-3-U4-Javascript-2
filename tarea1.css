@@ -1,0 +1,23 @@
+.contenedor{
+    display: flex;
+}
+
+.cuadrado{
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+
+}
+
+.cuadrado.violeta{
+    background-color: rgb(179, 137, 219);
+}
+
+.cuadrado.celeste{
+    background-color: rgb(109, 158, 214);
+}
+
+.cuadrado.verde{
+    background-color: rgb(142, 214, 109);
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+    <link rel="stylesheet" href="tarea1.css">
+</head>
+
+<body>
+    <h2>Cambiar fondo de pagina</h2>
+    <!-- <div class="contenedor">
+        <div class="cuadrado violeta" onclick="cambiarColor('rgb(179, 137, 219)')"></div>
+        <div class="cuadrado celeste" onclick="cambiarColor('rgb(109, 158, 214)')"></div>
+        <div class="cuadrado verde" onclick="cambiarColor('rgb(142, 214, 109)')"></div>
+    </div> -->
+    <div class="contenedor">
+        <div class="cuadrado violeta" id="violeta"></div>
+        <div class="cuadrado celeste" id="celeste"></div>
+        <div class="cuadrado verde" id="verde"></div>
+    </div>
+    
+    <script>
+        var body = document.querySelector('body')
+        var violeta = document.getElementById('violeta');
+        var celeste = document.getElementById('celeste');
+        var verde = document.getElementById('verde');
+
+        violeta.addEventListener('click', function() {
+            body.style.background = 'rgb(179, 137, 219)';
+        });
+        celeste.addEventListener('click', function() {
+            body.style.background = 'rgb(109, 158, 214)';
+        });
+        verde.addEventListener('click', function() {
+            body.style.background = 'rgb(142, 214, 109)';
+        });
+        
+        // function cambiarColor(color){
+        //     document.querySelector('body').style.background =color;
+        // }
+
+    </script>
+</body>
+
+</html>
